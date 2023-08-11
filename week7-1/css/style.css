@@ -46,7 +46,7 @@ body {
   background-color: aqua;
 }
 
-@media{
+@media (min-width:768px){
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
