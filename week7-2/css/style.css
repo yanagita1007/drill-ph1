@@ -8,6 +8,7 @@ body {
   display: grid;
   gap: 20px;
   padding-top: 50px;
+  max-width: 1000px;
 }
 
 .box-wrapper1 {
