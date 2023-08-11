@@ -9,6 +9,7 @@ body {
   display: grid;
   gap: 20px;
   padding-top: 50px;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .box-wrapper1 {
