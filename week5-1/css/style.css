@@ -2,6 +2,17 @@
 
 .pseudo-element {
   font-size: 40px;
+  position: relative;
+  display: inline-block;
 }
 
 /* ↓ ここに追記 ↓ */
+.pseudo-element::after{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: red;
+}
