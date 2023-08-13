@@ -1,11 +1,15 @@
 const weatherActivities = function(weather, temp) {
-  // if () {
-    
-  // } else if () {
-    
-  // } else {
-    
-  // }
+  if (weather==="晴れ" && temp>=25) {
+    console.log("ビーチで泳ぎましょう！");
+  } else if (weather==="晴れ" && 15<=temp && temp<25) {
+    console.log("公園でピクニックをしましょう！");
+  } else if (weather==="雨"){
+    console.log("家で映画を見ましょう！");
+  }else if(weather==="雪" && temp<=0){
+    console.log("雪だるまを作りましょう！");
+  }else{
+    console.log("今日の天気に合った活動を見つけてください！");
+  }
 }
 
 weatherActivities("晴れ", 27); // "ビーチで泳ぎましょう！"を出力
