@@ -2,11 +2,11 @@
 
 const slideOptions = {
   type: 'loop',
-  gap: gap, // 1. 40px に設定
+  gap: 40, // 1. 40px に設定
   width: '1096px',
   perPage: 3,
   padding: {
-    // 2. 左右に padding 28px を追加
+    left:28,right:28// 2. 左右に padding 28px を追加
   },
   pagination: false,
   breakpoints: {
@@ -18,5 +18,5 @@ const slideOptions = {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // 3. Splide を初期化し、スライドを表示
+  new Splide('.splide', slideOptions).mount();// 3. Splide を初期化し、スライドを表示
 });
