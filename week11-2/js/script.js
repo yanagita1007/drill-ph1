@@ -7,5 +7,5 @@ button.addEventListener('click', () => {
 });
 
 closeButton.addEventListener('click', () => {
-
+  container.classList.remove('openModal');
 });
