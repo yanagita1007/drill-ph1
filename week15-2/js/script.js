@@ -14,7 +14,22 @@ document.getElementById("clothing").addEventListener("click", function() {
 
 function displayProducts(category) {
   const products = document.querySelectorAll(".product");
+  const electronics = document.querySelectorAll(".product-electronics");
+  const clothings = document.querySelectorAll(".product-clothing");
+  console.log(products);
+  console.log(category == "product");
+
   products.forEach(product => {
-    // const products = document.querySelectorAll(".product");
+    console.log(product);
+    product.style.display = (category == "product") ? "block" : "none";  
+    console.log(product);
+  });
+  electronics.forEach(electronic => {
+    console.log(electronic);
+    electronic.style.display = (category == "product-electronics") ? "block" : "none";  
+    console.log(electronic);
+  });
+  clothings.forEach(clothing => {
+    clothing.style.display = (category == "product-clothing") ? "block" : "none";  
   });
 }
