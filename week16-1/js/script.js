@@ -16,5 +16,7 @@ document.querySelectorAll('.edit-button').forEach((btn) => {
 addOrUpdateButtonElement.addEventListener('click', function() {
   if (currentEditingElement) {
     // ここを追加しましょう
+    const songTitle = titleInputElement.value;
+    currentEditingElement.textContent = songTitle;
   }
 });
