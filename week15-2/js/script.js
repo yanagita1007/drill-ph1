@@ -16,20 +16,24 @@ function displayProducts(category) {
   const products = document.querySelectorAll(".product");
   const electronics = document.querySelectorAll(".product-electronics");
   const clothings = document.querySelectorAll(".product-clothing");
-  console.log(products);
-  console.log(category == "product");
 
   products.forEach(product => {
-    console.log(product);
-    product.style.display = (category == "product") ? "block" : "none";  
-    console.log(product);
-  });
-  electronics.forEach(electronic => {
-    console.log(electronic);
-    electronic.style.display = (category == "product-electronics") ? "block" : "none";  
-    console.log(electronic);
-  });
-  clothings.forEach(clothing => {
-    clothing.style.display = (category == "product-clothing") ? "block" : "none";  
-  });
+    product.style.display = "none";
+  })
+  if(category == "product"){
+    products.forEach(product => {
+      product.style.display = "block";
+    })
+    console.log(1);
+  }else if(category == "product-electronics"){
+    electronics.forEach(electronic => {
+      electronic.style.display = "block";
+    })
+    console.log(2);
+  }else if(category == "product-clothing"){
+    clothings.forEach(clothing => {
+      clothing.style.display = "block";
+    })
+    console.log(3);
+  }
 }
