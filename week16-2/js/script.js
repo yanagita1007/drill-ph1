@@ -7,12 +7,8 @@ let currentEditingElement = null;
 document.querySelectorAll('.edit-button').forEach((btn) => {
   btn.addEventListener('click', function() {
     // ここを追加しましょう
-    updateButtonElement.style.display = "";
+    updateButtonElement.style.display = "block";
     const box = document.getElementById("box");
-    box.classList.add ("flex");
-    box.classList.add ("flex-col");
-    titleInputElement.classList.add ("w-full");
-    updateButtonElement .classList.add ("w-full")
     const textElement = btn.parentElement.querySelector('span');
     titleInputElement.value = textElement.textContent;
     currentEditingElement = textElement;
